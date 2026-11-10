@@ -6,3 +6,5 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 .qa/
+# Raw source media (large, not part of the deployed site)
+Joshua_s Portfolio/

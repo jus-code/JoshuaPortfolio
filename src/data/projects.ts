@@ -1,4 +1,4 @@
-export type Category = "AI video" | "Video" | "Graphic design" | "Social";
+export type Category = "AI video" | "Video" | "VSL" | "Graphic design" | "Social";
 export type ProjectMedia =
   | { type: "image"; src: string; alt: string }
   | { type: "video"; src: string; poster?: string; captions?: string; alt: string };
@@ -17,44 +17,117 @@ export type Project = {
   url?: string;
 };
 
-// These are editorial slots, NOT completed projects or client work.
-// Replace each slot with cleared work, add media, and set placeholder: false.
-// Put local files in public/work and reference them as /work/filename.mp4.
+// Media lives in public/work. Compression and posters were generated from the
+// files supplied in the portfolio folder; confirm clearance before publishing.
 export const projects: Project[] = [
   {
-    id: "ai-video",
-    title: "AI video production",
-    category: "AI video",
-    description: "A place for script-to-screen work using AI-generated footage and hands-on editing.",
-    tools: [],
-    layout: "wide",
-    placeholder: true,
-  },
-  {
-    id: "vsl-ugc",
-    title: "VSL / UGC ads",
+    id: "church-anniversary",
+    title: "2nd Anniversary Trailer",
     category: "Video",
-    description: "A place for ad edits built around the script, pacing and a clear message.",
-    tools: [],
-    layout: "split",
-    placeholder: true,
+    description: "A short anniversary trailer cut from church service and event footage, shaped with paced highlights and title moments.",
+    role: "Editor",
+    tools: ["CapCut"],
+    layout: "wide",
+    placeholder: false,
+    media: {
+      type: "video",
+      src: "/work/church-anniversary.mp4",
+      poster: "/work/church-anniversary-poster.jpg",
+      alt: "2nd Anniversary Trailer for Grace Upon Grace Church",
+    },
   },
   {
-    id: "short-form",
-    title: "Short-form edits",
-    category: "Social",
-    description: "A place for vertical edits, captions and motion made for social feeds.",
-    tools: [],
+    id: "ai-animation-microplastic",
+    title: "Microplastic — AI Animation",
+    category: "AI video",
+    description: "An AI-generated short film on plastic pollution, built from generated footage and cut to a measured, documentary pace.",
+    role: "AI video creator & editor",
+    tools: ["Google Flow", "CapCut"],
     layout: "vertical",
-    placeholder: true,
+    placeholder: false,
+    media: {
+      type: "video",
+      src: "/work/ai-animation-microplastic.mp4",
+      poster: "/work/ai-animation-microplastic-poster.jpg",
+      alt: "Microplastic AI animation short film",
+    },
   },
   {
-    id: "graphic-design",
-    title: "Graphic design",
+    id: "vsl-apnea",
+    title: "APNEA — VSL",
+    category: "VSL",
+    description: "A video sales letter edit built to move viewers from the problem to the offer and the call to action without losing attention.",
+    role: "Editor",
+    tools: ["CapCut"],
+    layout: "split",
+    placeholder: false,
+    media: {
+      type: "video",
+      src: "/work/vsl-apnea.mp4",
+      poster: "/work/vsl-apnea-poster.jpg",
+      alt: "APNEA video sales letter",
+    },
+  },
+  {
+    id: "ai-ugc-russian-sleep",
+    title: "Russian Sleep — AI UGC",
+    category: "AI video",
+    description: "An AI UGC-style ad built from a script, generated avatar footage and B-roll, then edited for a vertical feed.",
+    role: "Editor & AI video",
+    tools: ["CapCut", "Higgsfield", "Google Flow"],
+    layout: "vertical",
+    placeholder: false,
+    media: {
+      type: "video",
+      src: "/work/ai-ugc-russian-sleep.mp4",
+      poster: "/work/ai-ugc-russian-sleep-poster.jpg",
+      alt: "Russian Sleep AI UGC ad",
+    },
+  },
+  {
+    id: "short-form-instagram",
+    title: "Instagram Short-form",
+    category: "Social",
+    description: "A short vertical edit for Instagram, shaped for the feed with quick pacing and a clear opening.",
+    role: "Editor",
+    tools: ["CapCut"],
+    layout: "vertical",
+    placeholder: false,
+    media: {
+      type: "video",
+      src: "/work/short-form-instagram.mp4",
+      poster: "/work/short-form-instagram-poster.jpg",
+      alt: "Short-form Instagram video edit",
+    },
+  },
+  {
+    id: "church-poster-series",
+    title: "Church Poster Series",
     category: "Graphic design",
-    description: "A place for posters, social graphics and event branding.",
-    tools: [],
+    description: "A set of square posters and social graphics for church events, keeping typography, colour and the church's visual identity consistent.",
+    role: "Graphic designer",
+    tools: ["Canva", "Adobe Photoshop"],
     layout: "design",
-    placeholder: true,
+    placeholder: false,
+    media: {
+      type: "image",
+      src: "/work/church-poster-series.jpg",
+      alt: "Selection of church event posters",
+    },
+  },
+  {
+    id: "pup-isite-polo",
+    title: "PUP ISITE Officer Polo",
+    category: "Graphic design",
+    description: "An officer polo shirt mockup prepared in Photoshop for the PUP ISITE student organization.",
+    role: "Graphic designer",
+    tools: ["Adobe Photoshop"],
+    layout: "design",
+    placeholder: false,
+    media: {
+      type: "image",
+      src: "/work/photoshop-polo-mockup.jpg",
+      alt: "PUP ISITE officer polo shirt mockup",
+    },
   },
 ];

@@ -26,10 +26,10 @@
 - Avoided rounded cards, glass surfaces, gradient backgrounds, stock imagery and icon grids.
 - Kept AI tools within a production workflow rather than a decorative logo wall.
 - Copy checked against the resume and interview. No fictional projects, clients, project dates, results, testimonials or social accounts.
-- Real project slots and the showreel remain explicitly labeled placeholders.
+- Seven project entries and the hero showreel now use media from the supplied portfolio folder. The build and visual checks need to be re-run for this content update.
 
 ## Scope / next checks
 
-This is a code-ready portfolio shell, not a claim that featured work is already published. After approved real media is added, check its compression, crops, poster loading, captions and playback on physical mobile devices. No real image/video files currently exist, so their visual quality and playback cannot yet be verified. Confirm the deployed canonical URL and social preview after connecting Vercel or a custom domain.
+Seven project entries and the hero showreel now use compressed media from the supplied portfolio folder. Re-run the build, the browser audit and a physical mobile playback check; the visual crop and poster quality of these files have not yet been verified. Confirm the deployed canonical URL and social preview after connecting Vercel or a custom domain.
 
 The browser audit is a practical regression check, not a full screen-reader certification or Lighthouse score. Re-run it after content changes; screenshots and JSON evidence are saved in `.qa/` and intentionally excluded from Git.

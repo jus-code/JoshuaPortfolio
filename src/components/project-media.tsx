@@ -18,7 +18,7 @@ export function ProjectMedia({ project }: { project: Project }) {
   const media = !project.placeholder ? project.media : undefined;
 
   return (
-    <div className={`project-media media-${project.layout}`} data-cursor={media ? "VIEW" : "MEDIA SOON"} onPointerEnter={startPreview} onPointerLeave={stopPreview}>
+    <div className={`project-media media-${project.layout}${media ? " has-media" : ""}`} data-cursor={media ? (media.type === "video" ? "PLAY" : "VIEW") : "MEDIA SOON"} onPointerEnter={startPreview} onPointerLeave={stopPreview}>
       {media?.type === "image" ? <Image src={media.src} alt={media.alt} fill sizes={project.layout === "wide" ? "(max-width: 768px) 100vw, 90vw" : "(max-width: 768px) 100vw, 55vw"} className="project-image" /> :
         media?.type === "video" ? <video ref={videoRef} controls playsInline preload="none" poster={media.poster} aria-label={media.alt} className="project-video" onPointerDown={() => { isHoverPreview.current = false; }} onKeyDown={() => { isHoverPreview.current = false; }}><source src={media.src} />{media.captions && <track kind="captions" src={media.captions} srcLang="en" label="English" default />}<p>Your browser does not support video. <a href={media.src}>Download the video</a>.</p></video> :
           <div className="media-placeholder">

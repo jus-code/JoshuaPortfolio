@@ -27,3 +27,5 @@ The resume was updated with a year of cold calling, appointment setting and GoHi
 The seven project entries and hero showreel now use work from the supplied Joshua_s Portfolio folder: the 2nd Anniversary Trailer, Microplastic AI animation, APNEA VSL, Russian Sleep AI UGC, Instagram short-form, church poster series and PUP ISITE polo mockup. Videos were compressed to H.264 with posters generated from the source files; the hero reel is a 16-second montage drawn from four of those projects. Media still needs a final visual and mobile playback check.
 
 Scroll reveals now replay on both downward and upward re-entry. Elements rearm only after fully leaving the viewport; upward entries use a shorter, top-origin reveal. Reduced motion and keyboard-focus visibility remain respected.
+
+A Media Library section sits after the portfolio, linking to the Google Drive archive of raw footage, project files and design exports. Section numbering shifted so the process, services, about, experience and contact labels run 03 to 07.

@@ -27,6 +27,7 @@
 - Kept AI tools within a production workflow rather than a decorative logo wall.
 - Copy checked against the resume and interview. No fictional projects, clients, project dates, results, testimonials or social accounts.
 - Seven project entries and the hero showreel now use media from the supplied portfolio folder. The build and visual checks need to be re-run for this content update.
+- The Media Library section links to the supplied Google Drive folder; verify the folder is shared publicly so visitors can open it without a Google sign-in.
 
 ## Scope / next checks
 

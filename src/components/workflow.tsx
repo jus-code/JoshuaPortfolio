@@ -15,7 +15,7 @@ export function Workflow() {
   return (
     <section className="workflow section-space" aria-labelledby="workflow-title">
       <div className="section-shell">
-        <div className="section-label metadata" data-reveal><span>02 / The process</span><span>Human direction. AI in the workflow.</span></div>
+        <div className="section-label metadata" data-reveal><span>03 / The process</span><span>Human direction. AI in the workflow.</span></div>
         <div className="workflow-heading" data-reveal><h2 id="workflow-title" className="display section-title">FROM SCRIPT.<br />TO SCREEN<span className="accent-text">.</span></h2><p>I use AI to build the footage a script needs. Then I edit it into a video with intention, from the first frame to the final cut.</p></div>
         <div className="process-layout" data-reveal>
           <div className="process-steps" role="tablist" aria-label="AI video production workflow">{steps.map((step, index) => <button key={step.name} id={`step-${index}`} type="button" role="tab" aria-selected={active === index} aria-controls="process-detail" tabIndex={active === index ? 0 : -1} onClick={() => setActive(index)} onKeyDown={(event) => {

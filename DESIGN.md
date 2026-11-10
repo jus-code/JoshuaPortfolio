@@ -22,4 +22,6 @@ Copy is direct and specific. No stock enthusiasm, promises of marketing performa
 ## Subsequent updates
 Web design was added to services and design skills at Joshua's request. Video editing and AI video creation remain the primary positioning. No web design tools, projects or experience claims have been added.
 
+The resume was updated with a year of cold calling, appointment setting and GoHighLevel/CRM work, extra church-media responsibilities and a soft-skills list. Those details were added to the timeline, services and skills index, with a short mention in the About copy. Creative work remains the lead; the sales experience sits after it.
+
 Scroll reveals now replay on both downward and upward re-entry. Elements rearm only after fully leaving the viewport; upward entries use a shorter, top-origin reveal. Reduced motion and keyboard-focus visibility remain respected.

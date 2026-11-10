@@ -4,7 +4,7 @@ export const site = {
   whatsapp: "https://wa.me/639934103557",
   title: "Joshua Aniban — Video Editor, AI Video Creator & Graphic Designer",
   description:
-    "Creative video editor, AI video creator and graphic designer in Bulacan, Philippines. AI video production, VSL/UGC ads and short-form editing. Open to freelance and full-time opportunities.",
+    "Creative video editor, AI video creator and graphic designer in Bulacan, Philippines. AI video production, VSL/UGC ads and short-form editing, plus cold calling, appointment setting and GoHighLevel (GHL) CRM experience. Open to freelance and full-time opportunities.",
 };
 
 // Never invent a production domain. Vercel supplies this on deployment.
